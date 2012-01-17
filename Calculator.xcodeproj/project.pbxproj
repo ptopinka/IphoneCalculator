@@ -15,6 +15,7 @@
 		3940EC5014969B4100625C8C /* CalculAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3940EC4F14969B4100625C8C /* CalculAppDelegate.m */; };
 		3940EC5314969B4100625C8C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3940EC5114969B4100625C8C /* MainStoryboard.storyboard */; };
 		3940EC5614969B4100625C8C /* CalculViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3940EC5514969B4100625C8C /* CalculViewController.m */; };
+		39BDAB53149CD84D000A0F40 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BDAB52149CD84D000A0F40 /* CalculatorBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		3940EC3F14969B4100625C8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3940EC4114969B4100625C8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3940EC4314969B4100625C8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3940EC4714969B4100625C8C /* Calculator-Info.plist */ = {isa = PBXFileReference; path = "Calculator-Info.plist"; sourceTree = "<group>"; };
+		3940EC4714969B4100625C8C /* Calculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Calculator-Info.plist"; sourceTree = "<group>"; };
 		3940EC4914969B4100625C8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3940EC4B14969B4100625C8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3940EC4D14969B4100625C8C /* Calculator-Prefix.pch */ = {isa = PBXFileReference; path = "Calculator-Prefix.pch"; sourceTree = "<group>"; };
-		3940EC4E14969B4100625C8C /* CalculAppDelegate.h */ = {isa = PBXFileReference; path = CalculAppDelegate.h; sourceTree = "<group>"; };
+		3940EC4D14969B4100625C8C /* Calculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calculator-Prefix.pch"; sourceTree = "<group>"; };
+		3940EC4E14969B4100625C8C /* CalculAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculAppDelegate.h; sourceTree = "<group>"; };
 		3940EC4F14969B4100625C8C /* CalculAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculAppDelegate.m; sourceTree = "<group>"; };
 		3940EC5214969B4100625C8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3940EC5414969B4100625C8C /* CalculViewController.h */ = {isa = PBXFileReference; path = CalculViewController.h; sourceTree = "<group>"; };
+		3940EC5414969B4100625C8C /* CalculViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculViewController.h; sourceTree = "<group>"; };
 		3940EC5514969B4100625C8C /* CalculViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculViewController.m; sourceTree = "<group>"; };
+		39BDAB51149CD84D000A0F40 /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		39BDAB52149CD84D000A0F40 /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				3940EC5114969B4100625C8C /* MainStoryboard.storyboard */,
 				3940EC5414969B4100625C8C /* CalculViewController.h */,
 				3940EC5514969B4100625C8C /* CalculViewController.m */,
+				39BDAB51149CD84D000A0F40 /* CalculatorBrain.h */,
+				39BDAB52149CD84D000A0F40 /* CalculatorBrain.m */,
 				3940EC4614969B4100625C8C /* Supporting Files */,
 			);
 			path = Calculator;
@@ -163,6 +168,7 @@
 				3940EC4C14969B4100625C8C /* main.m in Sources */,
 				3940EC5014969B4100625C8C /* CalculAppDelegate.m in Sources */,
 				3940EC5614969B4100625C8C /* CalculViewController.m in Sources */,
+				39BDAB53149CD84D000A0F40 /* CalculatorBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +215,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				SDKROOT = iphoneos;
+				OTHER_CFLAGS = "";
+				SDKROOT = iphoneos5.0;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -228,7 +236,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -239,7 +247,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
 				INFOPLIST_FILE = "Calculator/Calculator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -250,7 +264,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
 				INFOPLIST_FILE = "Calculator/Calculator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -274,6 +293,7 @@
 				3940EC5B14969B4100625C8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
